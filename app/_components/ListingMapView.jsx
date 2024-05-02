@@ -44,7 +44,7 @@ function ListingMapView({type}) {
 
     const handleSearchClick=async()=>{
         console.log(searchedAddress);
-        const searchTerm=searchedAddress?.value?.structured_formatting?.main_text
+        const searchTerm=searchedAddress?.label
         
         let query =  supabase
         .from('listing')

@@ -15,7 +15,7 @@ function AgentDetail({listingDetail}) {
             />
             <div>
                 <h2 className='text-lg font-bold'>{listingDetail?.fullName}</h2>
-                <h2 className='text-gray-500'>{listingDetail?.createdBy}</h2>
+                <h2 className='text-gray-500'>{listingDetail?.author}</h2>
             </div>
         </div>
         <Button>Send Message</Button>

@@ -28,7 +28,7 @@ function UserListing() {
         const {data,error}=await supabase
         .from('listing')
         .select(`*,listingImages(url,listing_id)`)
-        .eq('createdBy',user?.primaryEmailAddress.emailAddress);
+        .eq('author',user?.primaryEmailAddress.emailAddress);
         setListing(data);
         console.log(data);
     }
